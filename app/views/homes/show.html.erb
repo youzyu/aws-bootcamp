@@ -1,0 +1,11 @@
+<body>
+  <h1>Hello Camp<%= Time.zone.today.strftime("%Y%m") %> AWS Bootcamp !!</h1>
+
+  <p>
+    <% if Rails.env.production? %>
+      🚀 Yeah!! This is <strong>Your</strong> app is running on <strong>AWS (Production)</strong>!
+    <% else %>
+      🛠️ This is <strong>Your</strong> app is running <strong>locally</strong> (環境: <%= Rails.env %>)!
+    <% end %>
+  </p>
+</body>
